@@ -1,7 +1,8 @@
 .App {
   text-align: center;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(255, 255, 255);
   height: 500vh;
+  align-items: center;
 }
 
 .App-logo {
@@ -16,7 +17,7 @@
 }
 
 .headerNew {
-  background-color: rgba(204, 243, 255);
+  background-color: rgb(255, 255, 255);
   padding-top: 100px;
   margin: 0;
   font-family: "Roboto";
@@ -44,4 +45,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  font-family: "Inter";
 }

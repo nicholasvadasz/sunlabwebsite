@@ -24,45 +24,14 @@ const MenuBar = () => {
   };
 
   return (
-    <AppBar
-      color="transparent"
-      elevation={0}
-      sx={{ backdropFilter: "blur(20px)" }}
-    >
+    <AppBar color="transparent" elevation={0}>
       <Toolbar
         disableGutters
         sx={{
-          background: "rgba(0, 0, 0,0.3)",
+          background: "white",
+          borderBottom: "1px solid #e0e0e0",
         }}
       >
-        <img
-          src="/newlogo.png"
-          alt="logo"
-          style={{ width: "2%", padding: ".3%", marginLeft: ".4%" }}
-        />
-        <Box
-          sx={{
-            flexGrow: 1,
-            display: { xs: "none", md: "flex" },
-            justifyContent: "flex-end",
-            mr: "30px",
-          }}
-        >
-          {pages.map((page) => (
-            <Button
-              key={page}
-              onClick={handleCloseNavMenu}
-              sx={{
-                my: 2,
-                color: "black",
-                display: "block",
-                fontWeight: "bold",
-              }}
-            >
-              {page}
-            </Button>
-          ))}
-        </Box>
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
           <IconButton
             size="large"
@@ -99,14 +68,40 @@ const MenuBar = () => {
             ))}
           </Menu>
         </Box>
-        <Typography
-          variant="h6"
-          noWrap
-          component="div"
-          sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+        <p
+          style={{
+            color: "rgb(26,115,232)",
+            fontFamily: "Inter",
+            fontWeight: "800",
+            fontSize: "1rem",
+            marginLeft: "1rem",
+          }}
         >
-          LOGO
-        </Typography>
+          SUNLAB CONSULTANTS
+        </p>
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", md: "flex" },
+            justifyContent: "flex-end",
+            mr: "30px",
+          }}
+        >
+          {pages.map((page) => (
+            <Button
+              key={page}
+              onClick={handleCloseNavMenu}
+              sx={{
+                my: 2,
+                color: "rgb(26,115,232)",
+                display: "block",
+                fontWeight: "bold",
+              }}
+            >
+              {page}
+            </Button>
+          ))}
+        </Box>
       </Toolbar>
     </AppBar>
   );
