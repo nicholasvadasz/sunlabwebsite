@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: rgb(41, 41, 41);
+  height: 500vh;
 }
 
 .App-logo {
@@ -11,6 +13,13 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.headerNew {
+  background-color: rgba(204, 243, 255);
+  padding-top: 100px;
+  margin: 0;
+  font-family: "Roboto";
 }
 
 .App-header {
