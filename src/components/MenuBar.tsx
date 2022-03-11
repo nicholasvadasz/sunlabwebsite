@@ -24,12 +24,16 @@ const MenuBar = () => {
   };
 
   return (
-    <AppBar color="transparent" elevation={0}>
+    <AppBar
+      color="transparent"
+      elevation={0}
+      sx={{ backdropFilter: "blur(20px)" }}
+    >
       <Toolbar
         disableGutters
         sx={{
-          background: "white",
           borderBottom: "1px solid #e0e0e0",
+          background: "rgba(255, 255, 255,0.3)",
         }}
       >
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -74,7 +78,7 @@ const MenuBar = () => {
             fontFamily: "Inter",
             fontWeight: "800",
             fontSize: "1rem",
-            marginLeft: "1rem",
+            marginLeft: "2rem",
           }}
         >
           SUNLAB CONSULTANTS
