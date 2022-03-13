@@ -9,7 +9,12 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Hours", "About", "Contact", "Guides"];
+const pages = [
+  "About sunlab-consultants",
+  "Hours hours",
+  "Guides guides",
+  "Contact contact",
+];
 
 const MenuBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -22,6 +27,18 @@ const MenuBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  function scrollToTarget(elem: string) {
+    const element = document.getElementById(elem);
+    const headerOffset = 90;
+    const elementPosition = element!.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - headerOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <AppBar
@@ -93,8 +110,8 @@ const MenuBar = () => {
         >
           {pages.map((page) => (
             <Button
-              key={page}
-              onClick={handleCloseNavMenu}
+              key={page.split(" ")[0]}
+              onClick={() => scrollToTarget(page.toLowerCase().split(" ")[1])}
               sx={{
                 my: 2,
                 color: "rgb(26,115,232)",
@@ -102,7 +119,7 @@ const MenuBar = () => {
                 fontWeight: "bold",
               }}
             >
-              {page}
+              {page.split(" ")[0]}
             </Button>
           ))}
         </Box>
