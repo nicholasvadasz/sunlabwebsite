@@ -1,0 +1,43 @@
+.AboutPage {
+  width: 95vw;
+  background-color: #293d5b;
+  align-self: center;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.HeaderAndAbout {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  align-self: flex-start;
+}
+
+.Header {
+  font-size: 4rem;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.AboutText {
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Inter", sans-serif;
+  text-align: left;
+}
+
+.ConsultantGrid {
+  display: flex;
+  width: 90%;
+  gap: 2rem;
+  align-self: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
+}

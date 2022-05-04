@@ -9,12 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = [
-  "About sunlab-consultants",
-  "Hours hours",
-  "Guides guides",
-  "Contact contact",
-];
+const pages = ["About", "Hours", "Guides", "Contact"];
 
 const MenuBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -28,29 +23,12 @@ const MenuBar = () => {
     setAnchorElNav(null);
   };
 
-  function scrollToTarget(elem: string) {
-    const element = document.getElementById(elem);
-    const headerOffset = 90;
-    const elementPosition = element!.getBoundingClientRect().top;
-    const offsetPosition = elementPosition - headerOffset;
-
-    window.scrollBy({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  }
-
   return (
-    <AppBar
-      color="transparent"
-      elevation={0}
-      sx={{ backdropFilter: "blur(20px)" }}
-    >
+    <AppBar elevation={0} sx={{ color: "white", background: "#293D5B" }}>
       <Toolbar
         disableGutters
         sx={{
           borderBottom: "1px solid #e0e0e0",
-          background: "rgba(255, 255, 255,0.3)",
         }}
       >
         <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -89,17 +67,7 @@ const MenuBar = () => {
             ))}
           </Menu>
         </Box>
-        <p
-          style={{
-            color: "rgb(26,115,232)",
-            fontFamily: "Inter",
-            fontWeight: "800",
-            fontSize: "1rem",
-            marginLeft: "2rem",
-          }}
-        >
-          SUNLAB CONSULTANTS
-        </p>
+
         <Box
           sx={{
             flexGrow: 1,
@@ -110,16 +78,21 @@ const MenuBar = () => {
         >
           {pages.map((page) => (
             <Button
-              key={page.split(" ")[0]}
-              onClick={() => scrollToTarget(page.toLowerCase().split(" ")[1])}
               sx={{
-                my: 2,
-                color: "rgb(26,115,232)",
-                display: "block",
-                fontWeight: "bold",
+                fontFamily: "Inter",
+                fontSize: "1.7rem",
+                textTransform: "none",
+                ml: "30px",
+                color: "#F2E6C5",
+                "&:hover": {
+                  textUnderlineOffset: "4px",
+                  textDecoration: "underline",
+                },
               }}
+              disableRipple
+              href={`${page.toLowerCase()}`}
             >
-              {page.split(" ")[0]}
+              {page}
             </Button>
           ))}
         </Box>

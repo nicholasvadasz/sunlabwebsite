@@ -1,0 +1,22 @@
+.ImageContainer {
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.ConsultantImage {
+  width: 100%;
+}
+
+.ConsultantName {
+  max-width: 12rem;
+  overflow-wrap: break-word;
+}
+
+.ConsultantBio {
+  max-width: 12rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+}
