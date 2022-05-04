@@ -36,7 +36,9 @@ function HomePage() {
             ))}
           </div>
         </div>
-        <MySketch />
+        <div className="SketchContainer">
+          <MySketch />
+        </div>
       </div>
     </div>
   );
