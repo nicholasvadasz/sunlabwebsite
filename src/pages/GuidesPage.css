@@ -1,19 +1,19 @@
-.ContactPage {
-  width: 95vw;
+.GuidesPage {
+  width: 100vw;
   height: 100vh;
   background-color: #293d5b;
   display: flex;
   flex-direction: column;
 }
 
-.ContactHeader {
+.GuidesHeader {
   align-self: left;
   text-align: left;
   font-size: 4rem;
   margin-left: 5%;
 }
 
-.ContactContainer {
+.GuidesContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -21,15 +21,12 @@
   margin-top: 5%;
 }
 
-.ContactInfo {
-  width: 50%;
-  font-size: 1.5rem;
-  margin-left: 5%;
-  font-family: "Inter", sans-serif;
-  text-align: left;
-}
-
-.EmailAddress {
-  color: #f2e6c5;
-  text-underline-offset: 6px;
+.GuideCards {
+  width: 90%;
+  gap: 1rem;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: top;
 }

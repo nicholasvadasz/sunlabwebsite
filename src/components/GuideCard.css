@@ -1,0 +1,31 @@
+.GuideCard {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #f2e6c5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  justify-content: center;
+  margin: 0%;
+  border-radius: 4px;
+  padding: 4rem 0 4rem 0;
+}
+
+.GuideCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.GuideEmoji {
+  font-size: 6rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.GuideTitle {
+  margin: 0%;
+  text-decoration: none;
+  color: #293d5b;
+}

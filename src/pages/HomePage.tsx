@@ -2,6 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import MenuBar from "../components/MenuBar";
 import Button from "@mui/material/Button";
+import MySketch from "../components/MySketch";
 
 function HomePage() {
   const mainButtons = ["Hours", "Guides"];
@@ -35,6 +36,7 @@ function HomePage() {
             ))}
           </div>
         </div>
+        <MySketch />
       </div>
     </div>
   );

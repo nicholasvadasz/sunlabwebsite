@@ -1,0 +1,23 @@
+.GuidePage {
+  background-color: #293d5b;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.GuideName {
+  margin: 0;
+  padding-top: 2%;
+  width: 50%;
+  font-size: 4rem;
+  text-align: left;
+  align-self: center;
+}
+
+.MarkDown {
+  width: 50%;
+  background-color: #293d5b;
+  text-align: left;
+  font-size: 1.2rem;
+}
