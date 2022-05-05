@@ -1,6 +1,5 @@
 .GuidesPage {
   width: 100vw;
-  height: 100vh;
   background-color: #293d5b;
   display: flex;
   flex-direction: column;
@@ -23,10 +22,9 @@
 
 .GuideCards {
   width: 90%;
-  gap: 1rem;
   display: flex;
   align-self: center;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: top;
+  justify-content: space-evenly;
 }

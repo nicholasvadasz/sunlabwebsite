@@ -11,7 +11,7 @@ let offset: number;
 
 const MySketch = (props: ComponentProps) => {
   const setup = (p5: p5Types, canvasParentRef: Element) => {
-    p5.createCanvas(1920, 1000, p5.WEBGL).parent(canvasParentRef);
+    p5.createCanvas(1920, 1080, p5.WEBGL).parent(canvasParentRef);
     p5.background(41, 61, 91);
     p5.noFill();
     // p5.stroke(255, 0);
