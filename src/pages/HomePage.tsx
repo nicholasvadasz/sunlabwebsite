@@ -3,9 +3,11 @@ import "./HomePage.css";
 import MenuBar from "../components/MenuBar";
 import Button from "@mui/material/Button";
 import MySketch from "../components/MySketch";
+import { useIsMobile } from "../hooks/is-mobile";
 
 function HomePage() {
   const mainButtons = ["Hours", "Guides"];
+  const isMobile = useIsMobile();
   return (
     <div className="HomePage">
       <MenuBar />
@@ -36,9 +38,11 @@ function HomePage() {
             ))}
           </div>
         </div>
-        <div className="SketchContainer">
-          <MySketch />
-        </div>
+        {!isMobile ? (
+          <div className="SketchContainer">
+            <MySketch />
+          </div>
+        ) : null}
       </div>
     </div>
   );

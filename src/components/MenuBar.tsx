@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./MenuBar.css";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -8,6 +9,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
+import { Link } from "react-router-dom";
 
 const pages = ["About", "Hours", "Guides", "Contact"];
 
@@ -24,7 +26,7 @@ const MenuBar = () => {
   };
 
   return (
-    <AppBar elevation={0} sx={{ color: "white", background: "#293D5B" }}>
+    <AppBar elevation={0} sx={{ color: "#f2e6c5", background: "#293D5B" }}>
       <Toolbar
         disableGutters
         sx={{
@@ -61,9 +63,25 @@ const MenuBar = () => {
             }}
           >
             {pages.map((page) => (
-              <MenuItem key={page} onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">{page}</Typography>
-              </MenuItem>
+              <Link
+                to={`/${page.toLowerCase()}`}
+                style={{
+                  textDecoration: "none",
+                  color: "#f2e6c5",
+                }}
+              >
+                <MenuItem
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography
+                    textAlign="center"
+                    sx={{ textDecoration: "none"}}
+                  >
+                    {page}
+                  </Typography>
+                </MenuItem>
+              </Link>
             ))}
           </Menu>
         </Box>
