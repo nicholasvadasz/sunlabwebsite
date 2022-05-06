@@ -4,7 +4,12 @@ import MenuBar from "./components/MenuBar";
 import Button from "@mui/material/Button";
 import Section from "./components/Section";
 import Body from "./components/Body";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import HoursPage from "./pages/HoursPage";
 import AboutPage from "./pages/AboutPage";
@@ -20,6 +25,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/home" element={<Navigate to="/" />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/hours" element={<HoursPage />} />
             <Route path="/contact" element={<ContactPage />} />

@@ -22,11 +22,11 @@ function HomePage() {
                 sx={{
                   color: "#F2E6C5",
                   borderColor: "white",
-                  fontSize: "2rem",
+                  fontSize: isMobile ? "1.5rem" : "2rem",
                   fontWeight: "600",
                   borderRadius: "3px",
                   borderWidth: "2px",
-                  px: "3.5rem",
+                  px: isMobile ? "1.2rem" : "3.5rem",
                   "&:hover": {
                     borderColor: "#F2E6C5",
                     borderWidth: "2px",
@@ -38,11 +38,13 @@ function HomePage() {
             ))}
           </div>
         </div>
-        {!isMobile ? (
-          <div className="SketchContainer">
-            <MySketch />
-          </div>
-        ) : null}
+        <div className="SketchContainer">
+          <MySketch
+            screenWidth={window.innerWidth}
+            screenHeight={window.innerHeight}
+            isMobile={isMobile}
+          />
+        </div>
       </div>
     </div>
   );

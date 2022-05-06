@@ -1,35 +1,77 @@
-.ContactPage {
-  width: 95vw;
-  height: 100vh;
-  background-color: #293d5b;
-  display: flex;
-  flex-direction: column;
-}
+@media (min-width: 769px) {
+  .ContactPage {
+    width: 95vw;
+    height: 100vh;
+    background-color: #293d5b;
+    display: flex;
+    flex-direction: column;
+  }
 
-.ContactHeader {
-  align-self: left;
-  text-align: left;
-  font-size: 4rem;
-  margin-left: 5%;
-}
+  .ContactHeader {
+    align-self: left;
+    text-align: left;
+    font-size: 4rem;
+    margin-left: 5%;
+    margin-bottom: 1%;
+  }
 
-.ContactContainer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  margin-top: 5%;
-}
+  .ContactContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
 
-.ContactInfo {
-  width: 50%;
-  font-size: 1.5rem;
-  margin-left: 5%;
-  font-family: "Inter", sans-serif;
-  text-align: left;
+  .ContactInfo {
+    width: 50%;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+  }
 }
 
 .EmailAddress {
   color: #f2e6c5;
   text-underline-offset: 6px;
+}
+
+/* mobile breakpoint */
+@media (max-width: 768px) {
+  .ContactHeader {
+    padding-top: 10%;
+    font-size: 3rem;
+    align-self: flex-start;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 0%;
+  }
+
+  .EmailAddress {
+    color: #f2e6c5;
+    text-underline-offset: 6px;
+  }
+
+  .ContactContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+  }
+
+  .ContactInfo {
+    width: 80%;
+    font-size: 1.5rem;
+    margin-left: 5%;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+  }
+
+  .EmailAddress {
+    width: 100%;
+    font-size: 1.4rem;
+  }
 }

@@ -1,23 +1,57 @@
-.GuidePage {
-  background-color: #293d5b;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 768px) {
+  .GuidePage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #293d5b;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .GuideName {
+    width: 100%;
+    padding: 0;
+    padding-top: 2%;
+    font-size: 3rem;
+    text-align: left;
+    margin: 0;
+    padding-left: 5%;
+  }
+
+  .MarkDown {
+    width: 85%;
+    background-color: #293d5b;
+    text-align: left;
+    font-size: 1.2rem;
+    align-self: center;
+    overflow: break-word;
+    word-wrap: break-word;
+  }
 }
 
-.GuideName {
-  margin: 0;
-  padding-top: 2%;
-  width: 50%;
-  font-size: 4rem;
-  text-align: left;
-  align-self: center;
-}
+@media (min-width: 769px) {
+  .GuidePage {
+    background-color: #293d5b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.MarkDown {
-  width: 50%;
-  background-color: #293d5b;
-  text-align: left;
-  font-size: 1.2rem;
+  .GuideName {
+    margin: 0;
+    padding-top: 2%;
+    width: 50%;
+    font-size: 4rem;
+    text-align: left;
+    align-self: center;
+  }
+
+  .MarkDown {
+    width: 50%;
+    background-color: #293d5b;
+    text-align: left;
+    font-size: 1.2rem;
+  }
 }

@@ -12,7 +12,7 @@ function ContactPage() {
         <div className="ContactInfo">
           <p> {ContactExplanation} </p>
           <a href="mailto:consultants@cs.brown.edu" className="EmailAddress">
-            Email: consultants@cs.brown.edu
+            consultants@cs.brown.edu
           </a>
         </div>
       </div>

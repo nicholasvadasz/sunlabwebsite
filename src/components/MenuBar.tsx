@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 
-const pages = ["About", "Hours", "Guides", "Contact"];
+const pages = ["Home", "About", "Hours", "Guides", "Contact"];
 
 const MenuBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -70,13 +70,10 @@ const MenuBar = () => {
                   color: "#f2e6c5",
                 }}
               >
-                <MenuItem
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                >
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography
                     textAlign="center"
-                    sx={{ textDecoration: "none"}}
+                    sx={{ textDecoration: "none" }}
                   >
                     {page}
                   </Typography>

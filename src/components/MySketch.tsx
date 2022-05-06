@@ -2,7 +2,11 @@ import React from "react";
 import Sketch from "react-p5";
 import p5Types from "p5";
 
-interface ComponentProps {}
+interface ComponentProps {
+  screenWidth: number;
+  screenHeight: number;
+  isMobile: boolean;
+}
 
 let angle = 0;
 let t = 0;
@@ -11,7 +15,9 @@ let offset: number;
 
 const MySketch = (props: ComponentProps) => {
   const setup = (p5: p5Types, canvasParentRef: Element) => {
-    p5.createCanvas(1920, 1080, p5.WEBGL).parent(canvasParentRef);
+    p5.createCanvas(props.screenWidth, props.screenHeight, p5.WEBGL).parent(
+      canvasParentRef
+    );
     p5.background(41, 61, 91);
     p5.noFill();
     // p5.stroke(255, 0);
@@ -20,7 +26,9 @@ const MySketch = (props: ComponentProps) => {
 
   const draw = (p5: p5Types) => {
     p5.noFill();
-    p5.translate(400, 0);
+    if (!props.isMobile) {
+      p5.translate(0.2 * props.screenWidth, 0);
+    }
     p5.stroke(242, 230, 197);
     p5.strokeWeight(0.1);
     p5.scale(p5.noise(t) * 2.5);

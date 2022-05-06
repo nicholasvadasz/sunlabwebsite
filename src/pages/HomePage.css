@@ -1,43 +1,79 @@
-.HomePage {
-  width: 100vw;
-  height: 100vh;
-  z-index: 999;
+/* mobile breakpoint */
+@media (max-width: 768px) {
+  .HeaderText {
+    font-size: 3rem;
+    z-index: 999;
+    /* text-align: left; */
+  }
+
+  .HeaderAndButtons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 12%;
+    height: 90vh;
+    justify-content: space-between;
+    z-index: 999;
+  }
+
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    z-index: 999;
+    align-self: center;
+  }
+
+  .SketchContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }
 
-.Container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  z-index: 999;
-}
+@media (min-width: 769px) {
+  .HomePage {
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+  }
 
-.HeaderText {
-  color: "#F2E6C5";
-  font-family: "Inter", sans-serif;
-  font-size: 8rem;
-  text-align: left;
-  margin-left: -8px;
-  z-index: 999;
-}
+  .Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+  }
 
-.HeaderAndButtons {
-  margin-right: 40%;
-  margin-top: 5%;
-  z-index: 999;
-}
+  .HeaderText {
+    color: "#F2E6C5";
+    font-family: "Inter", sans-serif;
+    font-size: 8rem;
+    text-align: left;
+    margin-left: -8px;
+    z-index: 999;
+  }
 
-.Buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
+  .HeaderAndButtons {
+    margin-right: 40%;
+    margin-top: 5%;
+    z-index: 999;
+  }
 
-.SketchContainer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .SketchContainer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+  }
 }

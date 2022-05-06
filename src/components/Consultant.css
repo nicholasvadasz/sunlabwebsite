@@ -1,22 +1,53 @@
-.ImageContainer {
-  width: 12rem;
-  height: 12rem;
-  overflow: hidden;
+@media (min-width: 769px) {
+  .ImageContainer {
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    border: 2px solid #f2e6c5;
+  }
+
+  .ConsultantImage {
+    width: 100%;
+  }
+
+  .ConsultantName {
+    max-width: 12rem;
+    overflow-wrap: break-word;
+  }
+
+  .ConsultantBio {
+    max-width: 12rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
 }
 
-.ConsultantImage {
-  width: 100%;
-}
+@media (max-width: 768px) {
+  .ImageContainer {
+    width: 12rem;
+    height: 12rem;
+    overflow: hidden;
+    border: 2px solid #f2e6c5;
+  }
 
-.ConsultantName {
-  max-width: 12rem;
-  overflow-wrap: break-word;
-}
+  .ConsultantImage {
+    width: 100%;
+  }
 
-.ConsultantBio {
-  max-width: 12rem;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-word;
+  .ConsultantName {
+    max-width: 12rem;
+    margin: 1rem 0 0.7rem 0;
+    overflow-wrap: break-word;
+  }
+
+  .ConsultantBio {
+    max-width: 12rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+    margin: 0rem 0 2.2rem 0;
+  }
 }
