@@ -15,9 +15,8 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-top: 12%;
-    height: 90vh;
-    justify-content: space-between;
+    justify-content: center;
+    height: 100vh;
     z-index: 999;
   }
 
