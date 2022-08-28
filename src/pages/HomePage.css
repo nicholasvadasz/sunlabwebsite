@@ -1,4 +1,9 @@
 /* mobile breakpoint */
+.HomePage {
+  height: 100%;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .HeaderText {
     font-size: 3rem;
