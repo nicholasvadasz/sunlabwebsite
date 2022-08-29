@@ -16,7 +16,7 @@ Students who are looking for a Macintosh or who do not have a CS account should 
 
 ## How can I print in the Sunlab?
 
-See the [Printing in the Sunlab](cs.brown.edu/about/system/connecting/welcome-sunlab/printing-sunlab) page for more information.
+See the [Printing in the Sunlab](http://cs.brown.edu/about/system/connecting/welcome-sunlab/printing-sunlab) page for more information.
 
 ## Who are the consultants?
 
@@ -42,7 +42,7 @@ These are names which are used to identify the computers. The rows are labelled 
 
 ## What is the email address for my account?
 
-Your e-mail is simply your login name plus "@cs.brown.edu." For example: if your account is 'jcarberr', then your email address is [\[email protected\]](cs.brown.edu/cdn-cgi/l/email-protection) Ask the consultant about email programs if you do not know how to use one.
+Your e-mail is simply your login name plus "@cs.brown.edu." For example: if your account is 'jcarberr', then your email address is [\[email protected\]](http://cs.brown.edu/cdn-cgi/l/email-protection) Ask the consultant about email programs if you do not know how to use one.
 
 ## Are there any rules that I should know about?
 
@@ -68,7 +68,7 @@ The small whiteboard located on the column by 9a is used to display general mess
 
 ## Can I work in my account from my dorm room?
 
-Yes, you can work from your dorm room. See the [Portable Sunlab](cs.brown.edu/about/system/connecting/sunlab/) page for information about logging into the Sunlab from outside the CS Department building, or ask the consultant for a hotsheet on how to log in remotely. The hotsheet goes over the steps you need to take, as well as the software you will need.
+Yes, you can work from your dorm room. See the [Portable Sunlab](http://cs.brown.edu/about/system/connecting/sunlab/) page for information about logging into the Sunlab from outside the CS Department building, or ask the consultant for a hotsheet on how to log in remotely. The hotsheet goes over the steps you need to take, as well as the software you will need.
 
 Be aware that if you do log in remotely, you may be asked (via email) to log out of your current node if a user in the Sun Lab needs more processing power. Please be gracious about switching nodes. Especially when there is a wait list, it is easier for you to change nodes than for someone in the lab to do so. Tip: look for free nodes in the middle of the lab to log into when you log in remotely. People in the lab tend to sit near the ends.
 
