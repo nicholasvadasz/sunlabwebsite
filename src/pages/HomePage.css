@@ -5,6 +5,15 @@
 }
 
 @media (max-width: 768px) {
+  .HomePage {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .Container {
+    height: 100%;
+  }
+
   .HeaderText {
     font-size: 3rem;
     z-index: 999;
@@ -16,7 +25,7 @@
     flex-direction: column;
     align-self: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     z-index: 999;
     overflow: hidden;
   }

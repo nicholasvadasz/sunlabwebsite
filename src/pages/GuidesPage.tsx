@@ -12,6 +12,7 @@ function GuidesPage() {
           <GuideCard emoji="⊞" title="SSH w/ Windows" link="SSHWindows" />
           <GuideCard emoji="🍎" title="SSH w/ Apple" link="SSHApple" />
           <GuideCard emoji="🐧" title="SSH w/ Linux" link="SSHLinux" />
+          <GuideCard emoji="☀️" title="Sunlab FAQ" link="Sunlab FAQ" />
         </div>
       </div>
     </div>
