@@ -12,6 +12,7 @@
 
   .Container {
     height: 100%;
+    overflow: hidden;
   }
 
   .HeaderText {
