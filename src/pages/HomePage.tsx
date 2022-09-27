@@ -11,7 +11,7 @@ function HomePage() {
   return (
     <div className="HomePage">
       <MenuBar />
-      <div className="Container">
+      <div className="HomeContainer">
         <div className="HeaderAndButtons">
           <h1 className="HeaderText">Welcome to {<br />}the Sunlab</h1>
           <div className="Buttons">
