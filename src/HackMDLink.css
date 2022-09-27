@@ -1,0 +1,7 @@
+.HackMDLink {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  background-color: white;
+}

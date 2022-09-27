@@ -1,9 +1,5 @@
 import React from "react";
 import "./App.css";
-import MenuBar from "./components/MenuBar";
-import Button from "@mui/material/Button";
-import Section from "./components/Section";
-import Body from "./components/Body";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,6 +13,7 @@ import ContactPage from "./pages/ContactPage";
 import GuidesPage from "./pages/GuidesPage";
 import GuidePage from "./pages/GuidePage";
 import { IsMobileProvider } from "./hooks/is-mobile";
+import HackMDLink from "./HackMDLink";
 
 function App() {
   return (
@@ -25,6 +22,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/demo" element={<HackMDLink />} />
             <Route path="/home" element={<Navigate to="/" />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/hours" element={<HoursPage />} />
